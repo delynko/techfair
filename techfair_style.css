@@ -1,0 +1,107 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0
+}
+
+#map {
+    z-index: 1;
+    height: 100%;
+}
+
+.leaflet-container {
+    background-color:rgba(255,0,0,0.0);
+}
+
+#logo {
+    position: absolute;
+    z-index: 100;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#label {
+    height: 100px;
+    font-family: "Open Sans";
+    color: #607875;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    bottom: 0;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.marker-cluster-small {
+	background-color: rgba(166, 125, 0, 0.3);
+
+	}
+.marker-cluster-small div {
+	background-color: rgba(166, 125, 0, 1);
+	}
+
+.marker-cluster-medium {
+	background-color: rgba(63, 143, 210, 0.3);
+
+	}
+.marker-cluster-medium div {
+	background-color: rgba(63, 143, 210, 1);
+	}
+
+.marker-cluster-large {
+	background-color: rgba(166, 49, 0,  0.3);
+
+	}
+.marker-cluster-large div {
+	background-color: rgba(166, 49, 0, 1);
+	}
+
+	/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+	background-color: rgb(181, 226, 140);
+	}
+.leaflet-oldie .marker-cluster-small div {
+	background-color: rgb(110, 204, 57);
+	}
+
+.leaflet-oldie .marker-cluster-medium {
+	background-color: rgb(241, 211, 87);
+	}
+.leaflet-oldie .marker-cluster-medium div {
+	background-color: rgb(240, 194, 12);
+	}
+
+.leaflet-oldie .marker-cluster-large {
+	background-color: rgb(253, 156, 115);
+	}
+.leaflet-oldie .marker-cluster-large div {
+	background-color: rgb(241, 128, 23);
+}
+
+.marker-cluster {
+	background-clip: padding-box;
+	border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+	}
+.marker-cluster div {
+	width: 30px;
+	height: 30px;
+	margin-left: 2px;
+	margin-top: 2px;
+    border-width: 3px;
+	text-align: center;
+	border-radius: 20px;
+	font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+.marker-cluster span {
+    color: white;
+	line-height: 30px;
+	}
