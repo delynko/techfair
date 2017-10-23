@@ -25,7 +25,8 @@ html, body {
 
 #label {
     height: 100px;
-    font-family: "Open Sans";
+    font-family: "Arial";
+    font-size: 65;
     color: #607875;
     position: absolute;
     z-index: 100;
