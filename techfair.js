@@ -121,10 +121,6 @@ setTimeout(function(){
     location.reload();
 }, 120000);
 
-
-
-
-
 function toLayer(){
     
     var toJeffcoData = [];
@@ -188,15 +184,15 @@ function fromLayer(){
     return fromLayer; 
 }
 function getColor(d){
-    return d > 40 ? '#660000' :
-           d > 25 ? '#880000' :  
-           d > 10  ? '#aa0000' :
-           d > 1  ? '#ff0000' :
+    return d > 35 ? '#D62F27' :
+           d > 18 ? '#EB6E4B' :  
+           d > 12  ? '#F7A474' :
+           d > 1  ? '#FFF1E6' :
            d > 0  ? '#ffffff' :
-           d > -1   ? '#0000ff' :
-           d > -10  ? '#0000aa'  :
-           d > -25   ? '#0000aa' :
-           d > -40   ? '#000088' :
+           d > -1   ? '#EDF9FF' :
+           d > -8  ? '#AEBDBC'  :
+           d > -17   ? '#7B98BA' :
+           d > -35   ? '#4575B5' :
                       '#ffffff';
 }
 function style(feature) {
