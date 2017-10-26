@@ -10,7 +10,7 @@ var map = L.map("map", {
     maxZoom: 18,
     layers: [jeffcoBoundary],
     zoomControl: false
-}).setView([39.50, -105.21], 10);
+}).setView([39.40, -105.21], 10);
 
 
 migrationToJeffcoLayer = toLayer();
