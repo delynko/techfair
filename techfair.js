@@ -18,6 +18,7 @@ migrationFromJeffcoLayer = fromLayer();
 
 var politicalLayer = L.geoJson(politics, {style: style});
 
+//heatmap
 var heatLatLong = [];
 
 for (var l = 0; l < bark.features.length; l++) {
