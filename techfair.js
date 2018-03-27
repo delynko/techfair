@@ -104,23 +104,8 @@ setTimeout(function(){
 }, 90000);
 
 setTimeout(function(){
-    imp.removeFrom(map);
-    var snakes = L.geoJson(stream, {
-        onEachFeature: function(feature, layer){
-            var latlngs = [];
-            for (var i = 0; i < layer.feature.geometry.coordinates.length; i++){
-                latlngs.push(new L.LatLng(layer.feature.geometry.coordinates[i][1], layer.feature.geometry.coordinates[i][0]))
-            }
-            var snakeLine = L.polyline(latlngs, {snakingSpeed: 25});
-            snakeLine.addTo(map).snakeIn();
-        }
-    });
-    $("#label").html("Streams and Rivers");
-}, 105000);
-
-setTimeout(function(){
     location.reload();
-}, 120000);
+}, 105000);
 
 function toLayer(){
     
